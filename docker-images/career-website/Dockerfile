@@ -1,2 +1,2 @@
 FROM nginx:latest
-COPY ./website/resume/. /user/share/nginx/html/
+COPY /website/resume /user/share/nginx/html
