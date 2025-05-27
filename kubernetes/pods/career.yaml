@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: career-website
+spec:
+  containers:
+  - name: career-website
+    image: caree-website:latest
+    imagePullPolicy: Never
+    ports:
+    - containerPort: 80

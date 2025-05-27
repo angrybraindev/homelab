@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: career-website-deployment
+spec:
+  selector:
+    matchLabels:
+      app: angrybraindev-career-website
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: angrybraindev-career-website
+    spec:
+      containers:
+      - name: angrybraindev-career-website
+        image: angrybraindev/angrybraindev-career-website:latest
+        ports:
+        - containerPort: 80
+
+
